@@ -5,18 +5,26 @@
     "test": "echo \"This template does not include a test runner by default.\" && exit 1"
   },
   "devDependencies": {
-    "@snowpack/plugin-react-refresh": "2.4.0",
-    "@snowpack/plugin-typescript": "1.2.1",
-    "@types/react": "17.0.1",
-    "@types/snowpack-env": "2.3.0",
-    "snowpack": "3.0.11",
-    "typescript": "4.2.0-beta"
-  },
-  "dependencies": {
     "@babel/preset-env": "7.12.13",
     "@babel/preset-react": "7.12.13",
     "@babel/preset-typescript": "7.12.13",
     "@snowpack/plugin-babel": "2.1.6",
+    "@snowpack/plugin-postcss": "^1.1.0",
+    "@snowpack/plugin-react-refresh": "2.4.0",
+    "@snowpack/plugin-typescript": "1.2.1",
+    "@types/react": "17.0.1",
+    "@types/snowpack-env": "2.3.0",
+    "cssnano": "4.1.10",
+    "postcss": "8.2.4",
+    "postcss-bem-linter": "^3.3.0",
+    "postcss-cli": "8.3.1",
+    "postcss-nested": "5.0.3",
+    "snowpack": "3.0.11",
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0",
+    "typescript": "4.2.0-beta"
+  },
+  "dependencies": {
     "react": "17.0.1",
     "react-dom": "17.0.1"
   }

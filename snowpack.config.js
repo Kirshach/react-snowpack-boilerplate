@@ -7,24 +7,15 @@ module.exports = {
   },
   plugins: [
     "@snowpack/plugin-babel",
+    "@snowpack/plugin-postcss",
     "@snowpack/plugin-react-refresh",
     "@snowpack/plugin-typescript",
   ],
-  routes: [
-    /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
-  ],
-  optimize: {
-    /* Example: Bundle your final build: */
-    // "bundle": true,
-  },
+  routes: [],
+  optimize: {},
   packageOptions: {
     knownEntrypoints: ["react/jsx-runtime"],
   },
-  devOptions: {
-    /* ... */
-  },
-  buildOptions: {
-    /* ... */
-  },
+  devOptions: {},
+  buildOptions: {},
 };
