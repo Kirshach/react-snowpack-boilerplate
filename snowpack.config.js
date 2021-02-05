@@ -1,10 +1,14 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
+
 module.exports = {
   mount: {
-    /* ... */
+    public: "/",
+    src: "/dist",
   },
   plugins: [
-    /* ... */
+    "@snowpack/plugin-babel",
+    "@snowpack/plugin-react-refresh",
+    "@snowpack/plugin-typescript",
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
@@ -15,7 +19,7 @@ module.exports = {
     // "bundle": true,
   },
   packageOptions: {
-    /* ... */
+    knownEntrypoints: ["react/jsx-runtime"],
   },
   devOptions: {
     /* ... */
