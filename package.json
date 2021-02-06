@@ -30,11 +30,13 @@
     "postcss-bem-linter": "3.3.0",
     "postcss-cli": "8.3.1",
     "postcss-nested": "5.0.3",
+    "postcss-preset-env": "6.7.0",
     "prettier": "2.2.1",
     "snowpack": "3.0.11",
     "stylelint": "13.9.0",
+    "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "20.0.0",
-    "typescript": "4.2.0-beta"
+    "typescript": "4.2.0"
   },
   "dependencies": {
     "react": "17.0.1",
