@@ -2,19 +2,27 @@
 
 module.exports = {
   mount: {
-    public: "/",
-    src: "/dist",
+    public: '/',
+    src: '/dist',
   },
   plugins: [
-    "@snowpack/plugin-babel",
-    "@snowpack/plugin-postcss",
-    "@snowpack/plugin-react-refresh",
-    "@snowpack/plugin-typescript",
+    '@snowpack/plugin-dotenv',
+    '@snowpack/plugin-babel',
+    '@snowpack/plugin-postcss',
+    '@snowpack/plugin-typescript',
+    '@snowpack/plugin-react-refresh',
+    [
+      '@snowpack/plugin-run-script',
+      {
+        cmd: 'eslint src --ext .js,jsx,.ts,.tsx',
+        watch: 'esw -w --clear src --ext .js,jsx,.ts,.tsx',
+      },
+    ],
   ],
   routes: [],
   optimize: {},
   packageOptions: {
-    knownEntrypoints: ["react/jsx-runtime"],
+    knownEntrypoints: ['react/jsx-runtime'],
   },
   devOptions: {},
   buildOptions: {},

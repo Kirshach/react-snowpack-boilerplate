@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-function App() {
+const App = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -17,6 +17,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
