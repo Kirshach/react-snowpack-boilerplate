@@ -1,11 +1,21 @@
 {
   "compilerOptions": {
+    "allowUnreachableCode": false,
+    "esModuleInterop": true,
     "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "build",
     "removeComments": true,
+    "rootDir": "src",
     "sourceMap": true,
+    "strict": true,
     "target": "es2015"
   },
-  "exclude": ["node_modules"]
+  "include": ["src/**/*", "tests/**/*"]
 }
